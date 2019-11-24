@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>课程</title>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+              text-align: left;
+            }
+            .neirong {
+                background-color:yellow;
+            }
+            #zuiqiang{
+                background-color:red;
+            }
+        </style>
+    </head>
+
+    <body>
+    <h1> Web应用开发 </h1>
+
+    <h3> <a name="index">目录</a></h3>
+    <ul>
+      <li>第一阶段</li>
+      <ul>
+        <li> <a href="#node">Node、MongoDB、API</a></li>
+        <li> <a href="#case1"> 项目1 </a></li>
+      </ul>
+      <li>第二阶段</li>
+      <ul>
+        <li> <a href="vue">Vue + Webpack</a></li>
+        <li> <a href="#case2"> 项目2 </a></li>
+      </ul>
+      <li>第三阶段</li>
+      <ul>
+        <li> <a href="#react">React</a></li>
+        <li> <a href="#case3"> 项目3 </a></li>
+      </ul>
+    </ul>
+
+    <a href="index.html">返回主页</a>
+
+    <h2> <a name="node">Node、MongoDB、API</a></h2>
+    <table style="width:100%">
+    <tr>
+      <td>材料</td>
+      <td><ul>
+        <li>明扬推荐Web前端教程</li>
+        <ul>
+          <li>16 Node介绍和配置</li>
+          <li>18 node基础</li>
+          <li>19 Express框架</li>
+          <li>08 Ajax基础知识</li>
+          <li>09 Ajax实战</li>
+        </ul>
+        <li>实务PDF</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>内容</td>
+      <td>
+        <ul>
+            <li>C/S架构、请求与响应</li>
+            <li>Node、Express</li>
+            <li>Get、Post请求与响应</li>
+            <li>EJS动态网页生成</li>
+            <li>MongoDB</li>
+            <li>JSON API</li>
+        </ul>
+      </td>
+    </tr>
+    <td>Lab</td>
+      <td>
+        <ul>
+          <li>Zip</li>
+          <li> Node Lab: 安装完NodeJS后，在终端命令行中，cd进入/1-express目录下的相应目录，运行node server.js，进行试验。</li>
+          <ul>
+              <!-- <li> FCC：<a href="https://learn.freecodecamp.one/apis-and-microservices/apis-and-microservices-projects">实战</a> </li> -->
+              <li> 1-node-scripts: 基本JS练习  </li>
+              <li> 1-node-server: 原生Node Web Server </li>
+              <li> 2-express-server: Express Web Server 1 </li>
+              <li> 2-express-server-2: Express Web Server 2 </li>
+              <li> 3-express-routes: Express Route </li>
+              <li> 4-server-with-cors: Server支持CORS跨域访问 </li>
+              <li> 4-server-with-static-files: Public静态文件 </li>
+              <li> 5-fetch-to-server: Fetch </li>
+              <li> 6-query-params: Query参数 </li>
+              <li> 6-route-params: Route参数 </li>
+              <li> 6-post-simple: 简单POST </li>
+              <li> POST Body：
+                <ul>
+                  <li> 7-post-body-no-parser: 不Parse </li>
+                  <li> 7-post-body-with-parser: Parse </li>
+                  <li> 7-post-body-with-parser-package-json: Parse库 </li>
+                </ul>
+              <li> 8-async-await-examples:  </a>Async-Await</li>
+              <li> 你的字典：
+                <ul>
+                  <li>9-dictionary-v1-return-text: 返回文本</a></li>
+                  <li> 9-dictionary-v2-return-json: 返回JSON </li>
+                  <li> 9-dictionary-v3-support-post: 支持POST </li>
+                </ul>
+              <li> 10-tit-tat-multiple-user: Tit-Tat多人游戏！</li>
+          </ul>
+          <li>MongoDB Lab: 安装完MongoDB后，在终端命令行中，cd进入2-mongodb目录下的相应目录，运行node server.js，进行试验。</li>
+          <ul>
+            <li>1-mongodb-scripts: 基本MongoDB语法</li>
+            <li>2-load-dict-script: 初始化字典数据库</li>
+            <li>字典</li>
+            <ul>
+              <li>4-dictionary-spa: 单页</li>
+              <li>3-dictionary-server-side: 基于模板</li>
+              <li>3-dictionary-server-side-starter: 基于模板起始代码</li>
+              <li>4-dictionary-with-mongodb: 数据库 </li>
+            </ul>
+            <li>贺卡</li>
+            <ul>
+              <li>5-ecard-spa: 单页</li>
+              <li>5-ecard-server-side: 基于模板</li>
+              <li>5-ecard-write: 可存储</li>
+            </ul>
+            <li>6-diary: 日记</li>
+            <li>7-peep-notes: 笔记</li>
+          </ul>
+          <li>代码结构Lab：安装完NodeJS后，在终端命令行中，cd进入3-modules目录下的相应目录，运行node server.js，进行试验。</li>
+          <ul>
+              <!-- <li> FCC：<a href="https://learn.freecodecamp.one/apis-and-microservices/apis-and-microservices-projects">实战</a> </li> -->
+              <li>1-simple-modules: 简单模块</li>
+              <li>2-simple-middleware: 简单中间件</li>
+              <li>3-dictionary-with-routes: 代码重构的字典</li>
+          </ul>
+          <li>用户验证Lab：安装完NodeJS后，在终端命令行中，cd进入4-user目录下的相应目录，运行node server.js，进行试验。</li>
+          <ul>
+              <!-- <li> FCC：<a href="https://learn.freecodecamp.one/apis-and-microservices/apis-and-microservices-projects">实战</a> </li> -->
+              <li>1-cross-stitch: 十字绣</li>
+              <li>2-TriviaPlay: 一起玩游戏</li>
+              <li>3-weeknotes: 周记</li>
+          </ul>
+          <li>Websocket Lab：安装完NodeJS后，在终端命令行中，cd进入5-websocket目录下的相应目录，运行node server.js，进行试验。</li>
+      </td>
+    </tr>
+    <tr>
+      <td>笔记</td>
+      <td>
+        <ul>
+          <li> NodeJS </li>
+          <li> Express </li>
+          <li> MongoDB </li>
+          <li> 代码结构 </li>
+          <li> 用户验证 </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>FCC</td>
+      <td>
+        <ul>
+            <li> FCC：<a href="https://learn.freecodecamp.one/apis-and-microservices/basic-node-and-express">Node和Express基础</a></li>
+            <li> FCC：<a href="https://learn.freecodecamp.one/apis-and-microservices/managing-packages-with-npm">npm</a></li>
+            <li> FCC：<a href="https://learn.freecodecamp.one/data-visualization/json-apis-and-ajax">Ajax</a></li>
+            <li> FCC：<a href="https://learn.freecodecamp.one/apis-and-microservices/mongodb-and-mongoose">MongoDB</a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>实战</td>
+      <td>
+        <ul>
+          <li>文字转语音！</li>
+          <li>下载一个音乐来听</li>
+          <li>音乐盒</li>
+          <li> Mariah Carey音乐集：
+              etch/5-albums/fetch-text.html">函数方法1：文>，
+              etch/5-albums/fetch-json.html">函数方法2：JSO>，
+              etch/6-oo-albums/index.html">面向对/a>
+          </li>
+          <li>名言警句永不停</li>
+          <li>来几个动画吧</li>
+          <li>FCC实战</li>
+          <ul>
+            <li><a href="https://glitch.com/edit/#!/purple-paladin"> 1 </a> </li>
+            <li><a href="https://glitch.com/edit/#!/fuschia-custard"> 2 </a> </li>
+            <li><a href="https://glitch.com/edit/#!/thread-paper"> 3 </a> </li>
+            <li><a href="https://glitch.com/edit/#!/dandelion-roar"> 4 </a> </li>
+            <li><a href="https://glitch.com/edit/#!/curse-arrow"> 5 </a> </li>
+            <li><a href="https://glitch.com/edit/#!/hard-twilight"> 6 </a> </li>
+            <li><a href="https://glitch.com/edit/#!/protective-garage"> 7 </a> </li>
+            <li><a href="https://glitch.com/edit/#!/spark-cathedral"> 8 </a> </li>
+            <li><a href="https://glitch.com/edit/#!/giant-chronometer"> 9 </a> </li>
+            <li><a href="https://glitch.com/edit/#!/horn-celery"> 10 </a> </li>
+            <li><a href="https://learn.freecodecamp.one/coding-interview-prep/take-home-projects"> 更多练习 </a> </li>
+          </ul>
+          <li><a href="https://github.com/ustwo/ustwo.com-frontend/tree/master/src/app/components">ustwo网站的全部代码</a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+        <td>参考材料</td>
+        <td>
+            <ul>
+                <li> 《JavaScript权威指南-第6版》第18，19章</li>
+                <li><a href="https://github.com/axios/axios">axios HTTP请求库</a></li>
+                <li><a href="https://flaviocopes.com/axios/">axios入门</a></li>
+                <li><a href="https://github.com/i5ting/How-to-learn-node-correctly">如何正确学习Node.js</a></li>
+                <li>  <a href="https://developer.mozilla.org/zh-CN"> MDN开发者文档 </a> </li>
+                <li>  <a href="http://www.w3school.com.cn/tags/index.asp"> W3cshool手册 </a>  </li>
+            </ul>
+         </td>
+    </tr>
+    </table>
+
+    <a href="#index">返回目录</a>
+
+    <h2> <a name="case1"> 项目1 </a></h2>
+    <table style="width:100%">
+    <tr>
+      <td>内容</td>
+      <td>
+        <ul>
+        <li>明扬推荐Web前端教程</li>
+        <ul>
+          <li>20 node图书管理系统项目</li>
+          <li>29 全栈项目</li>
+        </ul>
+      </td>
+    </tr>
+    </table>
+
+    <a href="#index">返回目录</a>
+
+    <h2> <a name="vue">Vue + Webpack</a></h2>
+    <table style="width:100%">
+    <tr>
+      <td>材料</td>
+      <td><ul>
+        <li>明扬推荐Web前端教程</li>
+        <ul>
+          <li>22 Vue基础</li>
+          <ul>
+            <li>生命周期</li>
+            <li>动画</li>
+            <li>组件</li>
+            <li>路由</li>
+          </ul>
+          <li>23 Webpack</li>
+          <ul>
+            <li>Plugin配置</li>
+            <li>Loader配置</li>
+            <li>Vue结合</li>
+          </ul>
+        </ul>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+        <td>参考材料</td>
+        <td>
+            <ul>
+              <li><a href="https://medium.freecodecamp.org/a-beginners-introduction-to-webpack-2620415e46b3">FCC webpack手册</a></li>
+            </ul>
+         </td>
+    </tr>
+    </table>
+
+    <a href="#index">返回目录</a>
+
+    <h2> <a name="case2">项目2</a></h2>
+    <table style="width:100%">
+    <tr>
+      <td>材料</td>
+      <td>
+        <ul>
+          <li>明扬推荐Web前端教程</li>
+          <ul>
+            <li>24 Vue商城项目</li>
+            <ul>
+              <li>框架、布局、动画</li>
+              <li>Promise、axios</li>
+              <li>新闻、评论、图片、商品列表、购物车、外网测试</li>
+            </ul>
+            <li>25 微信小程序</li>
+            <ul>
+              <li>架构</li>
+              <li>组件</li>
+              <li>布局</li>
+              <li>跳转</li>
+              <li>项目</li>
+            </ul>
+          </ul>
+        </ul>
+      </td>
+    </tr>
+    </table>
+
+    <a href="#index">返回目录</a>
+
+    <h2> <a name="react">React</a></h2>
+    <table style="width:100%">
+    <tr>
+      <td>材料</td>
+      <td><ul>
+        <li>实务PDF</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>内容</td>
+      <td>
+        <ul>
+            <li>引言、组件概念</li>
+            <li>开发入门</li>
+            <li>模块定义（函数，类）</li>
+            <li>属性、状态</li>
+            <li>组件生命周期</li>
+            <li>事件响应</li>
+            <li>多模块交互</li>
+            <li>SAAS</li>
+            <li>应用创建</li>
+            <li>测试</li>
+        </ul>
+      </td>
+    </tr>
+    <td>Lab</td>
+      <td>
+        <ul>
+          <li>Zip</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>笔记</td>
+      <td>
+        <ul>
+        <li> SASS </li>
+        <li> React </li>
+      </ul></td>
+    </tr>
+    <tr>
+      <td>FCC</td>
+      <td>
+        <ul>
+            <li> FCC：<a href="https://learn.freecodecamp.one/front-end-libraries/sass"> Sass </a></li>
+            <li> FCC：<a href="https://learn.freecodecamp.one/front-end-libraries/react"> React </a></li>
+            <li> FCC：<a href="https://learn.freecodecamp.one/front-end-libraries/redux"> Redux </a></li>
+            <li> FCC：<a href="https://learn.freecodecamp.one/front-end-libraries/react-and-redux"> React和Redux </a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>实战</td>
+      <td>
+        <ul>
+            <li> 按钮1，按钮2</li>
+            <li> 计算器1，<a href="https://github.com/ahfarmer/calculator">计算器2</a></li>
+            <li> 番茄时钟</li>
+            <li> 电子鼓</li>
+            <li> Tic-Tac-Toe游戏</li>
+            <li> Markdown文件预览器</li>
+            <li><a href="https://github.com/jossmac/react-images">React图片插件</a></li>
+            <li><a href="https://reactfordesigners.com/framer/unsplash">React图片搜索和处理工具</a></li>
+      </td>
+    </tr>
+    <tr>
+        <td>参考材料</td>
+        <td>
+            <ul>
+              <li><a href="https://zh-hans.reactjs.org/">简介</a></li>
+              <li> 教程：<a href="https://zh-hans.reactjs.org/tutorial/tutorial.html">完成一个Tit-Tac-Toe</a></li>
+              <li><a href="https://zh-hans.reactjs.org/docs/hello-world.html">HelloWorld</a></li>
+              <li><a href="https://zh-hans.reactjs.org/docs/thinking-in-react.html">React设计哲学</a></li>
+              <li><a href="https://medium.freecodecamp.org/the-beginners-guide-to-react-9be65f50a55c">FCC React入门</a></li>
+              <li><a href="https://medium.freecodecamp.org/the-react-handbook-b71c27b0a795">FCC React手册</a></li>
+              <li><a href="https://material-ui.com"> Material UI设计</a></li>
+              <li><a href="https://medium.freecodecamp.org/the-vue-handbook-a-thorough-introduction-to-vue-js-1e86835d8446">FCC Vue手册</a></li>
+              <li><a href="https://github.com/ReactTraining/react-workshop">React Workshop</a></li>
+              <li><a href="https://github.com/ReactTraining/hooks-workshop">React Hooks Workshop</a></li>
+              <li><a href="https://www.framer.com/">交互式设计工具</a></li>
+            </ul>
+         </td>
+    </tr>
+    </table>
+
+    <a href="#index">返回目录</a>
+
+    <h2> <a name="case3"> 项目3 </a></h2>
+    <table style="width:100%">
+    <tr>
+      <td>内容</td>
+      <td>
+        <ul>
+          <li>Wdd</li>
+        <ul>
+            <li>Tweet</li>
+            <li>Todo List</li>
+            <li>购物车</li>
+            <li>API</li>
+            <li>定时器</li>
+            <li>Firebase</li>
+          </ul>
+          <li>明扬推荐Web前端教程：27 ReactNative电影项目</li>
+        </ul>
+      </td>
+    </tr>
+    </table>
+
+    <a href="#index">返回目录</a>
+
+    <h2> <a name="material"> 材料 </a></h2>
+    <table style="width:100%">
+    <tr>
+      <td>视频</td>
+      <td>
+        <ul>
+            <li> 极客学院，<a href="http://ke.jikexueyuan.com/zhiye/web/">Web大前端工程师</a></li>
+            <li> 清华大学，<a href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+44100343X+2019_T1"> Web前端攻城狮</a></li>
+        </ul>
+      </td>
+    </tr>
+    </table>
+
+    <a href="#index">返回目录</a>
+
+    <p>
+    <a href="index.html">返回主页</a>
+    </p>
+
+    </body>
+</html>
