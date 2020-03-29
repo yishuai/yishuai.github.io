@@ -1,0 +1,830 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+              text-align: left;
+            }
+            /* tr:nth-child(odd){
+                background-color: #cff;
+                /*color: white;*/
+            } */
+            .neirong {
+                background-color:yellow;
+            }
+            #zuiqiang{
+                background-color:red;
+            }
+        </style>
+    </head>
+
+    <body>
+
+      <h1></h1>
+
+      <p>下面的学习路线从浅至深，建议按下面顺序依次进行学习。</p>
+
+      <p>在每一部分学习中，建议按以下步骤认真进行：
+      <ul>
+        <li><strong>学习</strong>：记笔记，做讲解，更新学习之路。这样做的目的是：建立一个知识框架。听课其实是最高效的学习方法，因为老师对教学内容进行了梳理，建立了各内容之间的逻辑联系，所以，听课是最简单高效的学习方法。
+        <li><strong>练习</strong>：练习一定要做。练习是最最最关键的。请一定做好练习！</li>
+        <li><strong>实战</strong>：学习和练习后，我们往往发现：代码能看懂，也有一个模糊的印象，但遇到一个实际问题，还是不知道如何做。所以，需要大量练习。这方面，我们通过作业完成。所以我们要高度重视我们的作业。完成的作业作品，可依次放到我们的作品主页上。</li>
+      </ul>
+      </p>
+
+      <h2> 下面是学习内容</h2>
+
+      <h3> <a name="index">目录</a></h3>
+      <ul>
+          <li><a href="#intro">入门</a></li>
+          <li><a href="#math">数学</a></li>
+          <li><a href="#ml">机器学习概念</a></li>
+          <li><a href="#opti">深度神经元网络</a></li>
+          <li><a href="#cnn">CNN</a></li>
+          <li><a href="#vis">表征学习和可视化</a></li>
+          <li><a href="#rnn">RNN</a></li>
+          <li><a href="#nlp">NLP</a></li>
+          <li><a href="#gen">生成模型</a></li>
+          <li><a href="#gcn">图卷积网络</a></li>
+          <li><a href="#rl-tabular">增强学习原理</a></li>
+          <li><a href="#rl-appro">RL应用</a></li>
+          <li><a href="#rl">RL前线</a></li>
+          <li><a href="#test">概念自测</a></li>
+      </ul>
+
+      <a href="../index.html">返回主页</a>
+
+      <h2> <a name="material"> 材料 </a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>主课</td>
+        <td>
+          <ul>
+            <li> Berkeley CS182 深度神经元网络的设计和理解：
+              <a href="https://bcourses.berkeley.edu/courses/1453965">课程材料</a>（2019年春），<a href="https://www.youtube.com/playlist?list=PLkFD6_40KJIxopmdJF_CLNqG3QuDFHQUm">Youtube视频</a>
+              （2016年秋，那时候叫CS294-129）
+            </li>
+            <li>Toronto CSC421 深度学习：<a href="http://www.cs.toronto.edu/~rgrosse/courses/csc421_2019/">2019年冬</a></li>
+            <li>EPFL EE559 深度学习原理及其PyTorch 1.0实现：<a href="https://fleuret.org/ee559/">2019年春</a></li>
+            <li>Paris Saclay 深度学习：<a href="https://github.com/m2dsupsdlclass/lectures-labs">2019年春</a></li>
+            <li>MIT 6.S191 深度学习：<a href="https://github.com/aamini/introtodeeplearning_labs">2019年春</a></li>
+            <li>NYU DL深度学习：2019（<a href="https://www.overleaf.com/read/rcfbqpyjydhw">学生合作课件</a>，<a href="https://github.com/Atcold/SP19-DL-collaborative-notes">Latex源文件</a>，<a href="https://github.com/drr342/Deep_Learning">练习</a>），2018（<a href="https://drive.google.com/drive/folders/1IrR2fOfpKReIE7agepXXKqp4bB2zcxDz">课程材料</a>，<a href="https://www.overleaf.com/13548842mwvmftwrcwjs#/52345421/">学生合作课件</a>）</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>参考课</td>
+        <td>
+          <ul>
+            <li> CMU 10707 深度学习，<a href="https://deeplearning-cmu-10707.github.io/syllabus.html">2019年春</a>，2017年（<a href="https://www.bilibili.com/video/av20302950/">B站视频</a>）
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>前置课程</td>
+        <td>
+          <ul>
+            <li>微积分，线性代数：Math 53/54</li>
+            <li>概率：CS70，Stat 134</li>
+            <li>机器学习：CS189</li>
+            <li>编程（Python）：CS61B</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>课本</td>
+        <td>
+          <ul>
+            <li>深度学习: <a href="http://www.deeplearningbook.org/">英文版</a>，<a href="https://github.com/exacity/deeplearningbook-chinese">中文版</a>，2016</li>
+            <li><a href="http://incompleteideas.net/book/bookdraft2018jan1.pdf">增强学习</a>，2017</li>
+            <li>Bishop (2006) <a href="http://research.microsoft.com/en-us/um/people/cmbishop/PRML/index.htm">Pattern Recognition and Machine Learning</a></li>
+            <li>Murphy Machine Learning: A Probabilistic Perspective</li>
+            <li>Hastie (2009) <a href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/">The Elements of Statistical Learning</a></li>
+            <li>MacKay (2003) <a href="http://www.inference.phy.cam.ac.uk/mackay/itila/book.html">Information Theory, Inference, and Learning Algorithms</a></li>
+            <li>CS189 Book：A Comprehensive Guide to Machine Learning，2018</li>
+            <li><a href="https://github.com/nndl/nndl.github.io">神经网络与深度学习</a>, 邱锡鹏</li>
+            <li><a href="http://neuralnetworksanddeeplearning.com/">Neural Networks and Deep Learning</a>, Michael A. Nielsen</li>
+            <li><a href="https://mitpress.mit.edu/books/introduction-deep-learning">Introduction to Deep Learning</a>, Eugene Charniak</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>PyTorch权威学习样例</td>
+        <td>
+          <ul>
+            <li><a href="https://github.com/pytorch/tutorials">官方Tutorial</a></li>
+            <li><a href="https://github.com/yunjey/pytorch-tutorial">YunJey Tutorial</a></li>
+            <li><a href="https://github.com/pytorch/examples/">官方Examples</a></li>
+            <li><a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html">Blitz Tutorial</a></li>
+            <li><a href="https://github.com/mila-iqia/training">MILA各种模型Benchmark</a></li>
+            <li><a href="https://github.com/mila-iqia/welcome_tutorials">MILA新生培训教程</a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Keras权威学习样例</td>
+        <td>
+          <ul>
+            <li><a href="https://www.tensorflow.org/tutorials/keras">官方Tutorial</a></li>
+            <li><a href="https://github.com/fchollet/deep-learning-with-python-notebooks">fchollet Tutorial</a></li>
+          </ul>
+        </td>
+      </tr>
+
+
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="intro">入门</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>Overview, brief history of deep networks</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>课本</td>
+        <td>
+          <ul>
+            <li>深度学习，Ch.1 Introduction</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>材料</td>
+        <td>
+          <ul>
+              <li>CS182 Lec 1</li>
+              <li>Toronto CSC421 Lec/Note 1 introduction</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>练习</td>
+        <td>
+          <ul>
+            <li><a href="http://cs231n.github.io/python-numpy-tutorial/">CS231n Python/Numpy tutorial</a></li>
+            <li>EE559 Prasctical 1: PyTorch入门</li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="math">数学</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>数学</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>课本</td>
+        <td>
+          <ul>
+            <li>深度学习，Ch.2 线性代数</li>
+            <li>深度学习，Ch.3 概率、信息论</li>
+            <li>深度学习，Ch.4 数值计算</li>
+          </ul>
+        </td>
+      </tr>
+      <!-- <tr>
+        <td>材料</td>
+        <td>
+          <ul>
+              <li></li>
+          </ul>
+        </td>
+      </tr> -->
+      <tr>
+        <td>练习</td>
+        <td>
+          <ul>
+            <li>EE559 Handout Ch.1 Intro</li>
+            <li>Toronto CSC421 Tutorial 1 多变量微积分</li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="ml">机器学习</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>Loss and Risk, Discriminative models, Linear and Logistic Regression.</li>
+            <li>Bias-Variance tradeoff, Regularization, SVMs, Multiclass classification, Softmax. Cross-validation.</li>
+            <li>Stochastic Gradient Descent</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>课本</td>
+        <td>
+          <ul>
+            <li>深度学习，Ch.5 ML</li>
+            <li>CS 189 Sec. 1，regression，validation </li>
+            <li>CS 189 Sec. 6.6-6.11，分类，SVM，LR (skip KL-div，Tikhonov)</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>材料</td>
+        <td>
+          <ul>
+            <li>CS182 Lec 2，3；Note 1，2</li>
+            <li>Toronto CSC421 Lec/Note 2 linear models</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>练习</td>
+        <td>
+          <ul>
+            <li>EE559 Prasctical 2: PyTorch 图像最近邻，PCA</li>
+            <li>EE559 Handout Ch.2 ML</li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="opti">深度神经元网络</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>Backpropagation</li>
+            <li>Training: Batch normalization, Dropout, Ensembles, Hyperparameter tuning</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>课本</td>
+        <td>
+          <ul>
+            <li>深度学习，Ch.6 深度前向网络</li>
+            <li>深度学习，Ch.7 Regularization</li>
+            <li>深度学习，Ch.8 优化</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>材料</td>
+        <td>
+          <ul>
+            <li>CS182 Lec 4，Note 3</li>
+            <li>CS231 Note: <a href="http://cs231n.github.io/optimization-1/">优化</a>, <a href="http://cs231n.github.io/optimization-2/">深度神经元网络优化</a>
+            <li>MIT 6.S191 Lec 1</li>
+            <li>Toronto CSC421 Lec/Note 3 MLP, 4 BP
+              , 6 Autograd, 7 optimize, 12 generalization</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>练习</td>
+        <td>
+          <ul>
+            <li><a href="http://cs231n.github.io/neural-networks-case-study/">Andrej Karpathy: Build a Neural Network from Scratch</a></li>
+            <li>Toronto CSC421 Lec 3 <a href="https://colab.research.google.com/drive/1yfMIqJCHSjPaxTd16kF_m5tegV4I8f0R">Demo</a></li>
+            <li>Toronto CSC421 Tutorial 2 Autograd</li>
+            <li>Toronto CSC421 Tutorial 3 PyTorch</li>
+            <li>Toronto CSC421 HW 1 BP，Activation</li>
+            <li>Toronto CSC421 HW 2 Optimization</li>
+            <li>Paris Saclay 深度学习 Lab 1 Introduction</li>
+            <li>Paris Saclay 深度学习 Lab 2 NN and BP</li>
+            <li>NYU DL Assignment 1: BP</li>
+            <li>EE559 Handout Ch.3 MLP and BP</li>
+            <li>EE559 Handout Ch.4 DAG, Autograd, CNN</li>
+            <li>EE559 Handout Ch.5 初始化，优化</li>
+            <li>EE559 Handout Ch.6 Dropout，BN，Residual，GPU</li>
+            <li>EE559 Prasctical 3: 图像分类</li>
+            <li>CS181 Assign 1，修改代码，用Python实现下面功能</li>
+            <ul>
+              <li>全联通NN</li>
+              <li>Batch normalization</li>
+              <li>Dropout</li>
+            </ul>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="cnn">CNN</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>Convolutional Networks, CNN examples, Activation functions, Initialization</li>
+            <li>Object Detection and Segmentation</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>课本</td>
+        <td>
+          <ul>
+            <li>深度学习，Ch.9 CNN</li>
+            <li>深度学习，Ch.12.2 CV</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>材料</td>
+        <td>
+          <ul>
+            <li>CS182 Lec 5-8</li>
+            <li>CS182 Note 4</li>
+            <li><a href="http://cs231n.github.io/convolutional-networks/">CNN</a>，深度网络训练方法：<a href="http://cs231n.github.io/neural-networks-1/">1</a>，<a href="http://cs231n.github.io/neural-networks-2/">2</a>，<a href="http://cs231n.github.io/neural-networks-3/">3</a> </li>
+            <li><a href="https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detectors-faster-r-cnn-r-fcn-fpn-7e354377a7c9">目标检测入门</a>，<a href="https://medium.com/@arthur_ouaknine/review-of-deep-learning-algorithms-for-image-semantic-segmentation-509a600f7b57">语义分割入门</a></li>
+            <li>MIT 6.S191 Lec 3</li>
+            <li>Toronto CSC421 Lec/Note 9 CNN, 10 图像分类</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>练习</td>
+        <td>
+          <li>Toronto CSC421 Tutorial 4 CNN </li>
+          <li>Paris Saclay 深度学习 Lab 5 目标检测、语义分割</li>
+          <li>Paris Saclay 深度学习 Lab 8 PyTorch练习</li>
+          <li>NYU DL Assignment 2: 卷积和深度NN能力</li>
+          <li>NYU DL Assignment 3: CNN图片分类</li>
+          <li>EE559 Handout Ch.7 图片分类、目标检测、语义分割</li>
+          <li>EE559 Prasctical 4: PyTorch CNN</li>
+          <li>CS181 Assign 1，修改代码，实现CNN，在CIFAR-10数据集上完成测试</li>
+          <li>Toronto CSC421 Assignment 2 CNN，图片着色，超清晰度，可视化</li>
+        </td>
+      </tr>
+      <tr>
+        <td>实战</td>
+        <td>
+          <li><a href="https://navoshta.com/traffic-signs-classification/">交通信号灯检测项目流程</a></li>
+          <li><a href="https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html">PyTorch Transfer Learning图片分类</a></li>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="vis">表征学习和可视化</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>可视化</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>课本</td>
+        <td>
+          <ul>
+            <li>深度学习，Ch.11 实用技术</li>
+            <li>深度学习，Ch.15 表征学习</li>
+            <li>Mining of Massive Datasets. Chapter 9 Recommender systems (Collaborative Filtering) 2nd edition. pages 307-311 (intro and 9.1) and 321-327 (9.3). 2014. </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>材料</td>
+        <td>
+          <ul>
+            <li>CS182 Lec 10</li>
+            <li><a href="http://yosinski.com/deepvis">NN可视化理解</a></li>
+            <li><a href="https://distill.pub/2017/feature-visualization/">Feature可视化</a></li>
+            <li>Paris Saclay DL Lec 3: <a href="https://m2dsupsdlclass.github.io/lectures-labs/slides/03_recommender_systems/index.html">Embeddings and Recommender Systems</a></li>
+            <li><a href="https://m2dsupsdlclass.github.io/lectures-labs/slides/09_imbalanced_classif_metric_learning/index.html">Imbalanced classification and metric learning</a></li>
+            <li>Toronto CSC421 Lec/Note 5 分布式表征, 11 可视化</li>
+            <li>Toronto CSC421 Tutorial 6 best Practise</li>
+            <li><a href="https://www.quora.com/In-the-context-of-deep-learning-what-is-an-ablation-study">什么是Ablation Study</a></li>
+            <li><a href="http://cs231n.github.io/understanding-cnn/">Visualizing what ConvNets learn</a></li>
+            <li><a href="http://scs.ryerson.ca/~aharley/vis/conv/flat.html">可视化MNIST学习各层</a></li>
+            <li><a href="https://blog.keras.io/how-convolutional-neural-networks-see-the-world.html">How convolutional neural networks see the world</a>，2016</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>练习</td>
+        <td>
+          <ul>
+            <li>Paris Saclay 深度学习 Lab 3 Embeddings和推荐系统</li>
+            <li>Paris Saclay 深度学习 Lab 9 Siamese和Triple Loss</li>
+            <li>EE559 Handout Ch.8 可视化、分析与优化</li>
+            <li>EE559 Prasctical 5: PyTorch模型能力分析</li>
+            <li>CS181 Assign 2，可视化深度学习获得的数据表征</li>
+            <li>CS181 Assign 2，图像风格Transfer</li>
+            <li><a href="https://pytorch.org/tutorials/advanced/neural_style_tutorial.html">Neural Transfer Using PyTorch</a>,  PyTorch Tutorials 1.1.0 documentation</li>
+            <li>Toronto CSC421 Assignment 1 Word2Vec </li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="rnn">RNN</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>Recurrent Networks, LSTMs, applications</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>课本</td>
+        <td>
+          <ul>
+            <li>深度学习，Ch.10 RNN</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>材料</td>
+        <td>
+          <ul>
+            <li>CS182 Lec 9</li>
+            <li>CS182 Note 5</li>
+            <li><a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">理解LSTM</a></li>
+            <li>MIT 6.S191 Lec 2 RNN</li>
+            <li>Toronto CSC421 Lec/Note 13 RNN, 14 梯度爆炸和消失，15 自回归模型</li>
+
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>练习</td>
+        <td>
+          <ul>
+            <li>Toronto CSC421 Tutorial 7 RNN</li>
+            <li>Toronto CSC421 HW 3 Dropout，Binary Addition</li>
+            <li>Toronto CSC421 HW 4 LSTM梯度，多维RNN，Reversibility</li>
+            <li>MIT 6.S191 Lab 1 音乐生成</li>
+            <li>EE559 Handout Ch.11 RNN</li>
+            <li>CS181 Assign 2，修改代码，完成RNN和LSTM图像标题生成</li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="nlp">NLP</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>Semantic Models for Text</li>
+            <li>Attention Networks</li>
+            <li>Natural Language Translation</li>
+            <li>Text Question Answering</li>
+            <li>Neural Dialog Systems</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>课本</td>
+        <td>
+          <ul>
+            <li>深度学习，Ch.12.4 NLP</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>材料</td>
+        <td>
+          <ul>
+            <li>CS182 Lec 11-15</li>
+            <li>CS182 Note 6，7</li>
+            <li>Toronto CSC421 Lec 16 Attention</li>
+            <li>论文：<a href="https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf">Word2Vec</a></li>
+            <li>论文：<a href="https://arxiv.org/abs/1506.06726">Skip-Thought Vectors</a></li>
+            <li>论文：<a href="https://papers.nips.cc/paper/5542-recurrent-models-of-visual-attention.pdf">视觉Attention的回归模型</a></li>
+            <li>论文：<a href="https://arxiv.org/abs/1409.0473">NMT by Jointly Learning to Align and Translate</a></li>
+            <li>论文：<a href="https://arxiv.org/abs/1706.03762">Attention is All You Need</a></li>
+            <li>网页：<a href="http://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a></li>
+            <li>论文：<a href="">End-to-End Memory Networks</a></li>
+            <li>论文：<a href="">QANet</a></li>
+            <li>论文：<a href="">Learning End-to-End Goal Directed Dialog</a></li>
+            <li>论文：<a href="">BERT: Pre-training of Deep Bidirectional Transformers </a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>练习</td>
+        <td>
+          <ul>
+            <li>NYU DL Assignment 3: 语言模型</li>
+            <li>Toronto CSC421 Assignment 3 Attention，GRU，可视化 </li>
+            <li>Paris Saclay 深度学习 Lab 6 文本分类，Embedding，语言模型</li>
+            <li>Paris Saclay 深度学习 Lab 7 Seq2Seq翻译</li>
+            <li>EE559 Handout Ch.11.3 Word2Vec, 翻译</li>
+            <li>CS181 Assign 3，语言模型，自动新闻生成</li>
+            <li>CS181 Assign 3，实现Transformer，自动文本摘要生成</li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="gen">生成模型</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>Adversarial and Fooling Networks</li>
+            <li>Generative Models</li>
+            <li>Generative Adversarial Networks</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>课本</td>
+        <td>
+          <ul>
+            <li>深度学习，Ch.14 自编码</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>材料</td>
+        <td>
+          <ul>
+            <li>CS182 Lec 16-18</li>
+            <li>CS182 Note 8</li>
+            <li>MIT 6.S191 Lec 4</li>
+            <li>Toronto CSC421 Lec 17 VAE, 18 GAN, 19 Bayesian NN </li>
+            <li>论文：<a href="https://arxiv.org/abs/1412.6572">Adversarial Examples</a></li>
+            <li>论文：<a href="https://arxiv.org/abs/1611.02770">Transferability/blackbox attacks</a></li>
+            <li>论文：<a href="https://arxiv.org/abs/1707.08945">Physical perturbation</a></li>
+            <li>论文：<a href="https://arxiv.org/pdf/1312.6114">Variational Auto-Encoders</a></li>
+            <li>论文：<a href="https://arxiv.org/pdf/1601.06759">Autoregressive Models</a></li>
+            <li>论文：<a href="https://arxiv.org/pdf/1802.05751">Image Transformer</a></li>
+            <li>论文：<a href="https://arxiv.org/abs/1406.2661">Generative Adversarial Networks</a></li>
+            <li>论文：<a href="https://arxiv.org/abs/1511.06434">DCGAN Paper</a></li>
+            <li>网页：<a href="https://lilianweng.github.io/lil-log/2017/08/20/from-GAN-to-WGAN.html">Wasserstein GAN Blog Post (From GAN to WGAN)</a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>练习</td>
+        <td>
+          <ul>
+              <li>Toronto CSC421 Tutorial 8 信息论</li>
+              <li>Toronto CSC421 Tutorial 9 Pyro</li>
+              <li>Toronto CSC421 HW 5 Variational Free energy</li>
+              <li>Toronto CSC421 Assignment 4 CycleGAN </li>
+              <li>NYU DL Project: 半监督图片聚类</li>
+              <li>Paris Saclay 深度学习 Lab 10 图片VAE</li>
+              <li>EE559 Handout Ch.9 自编码</li>
+              <li>EE559 Handout Ch.10 GAN</li>
+              <li>MIT 6.S191 Lab 2 图片去偏</li>
+              <li><a href="https://github.com/eriklindernoren/PyTorch-GAN">PyTorch GAN</a></li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="gcn">图卷积网络</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>GCN</li>
+          </ul>
+        </td>
+      </tr>
+      <!-- <tr>
+        <td>课本</td>
+        <td>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
+      </tr> -->
+      <tr>
+        <td>材料</td>
+        <td>
+          <ul>
+            <li>NYU DL学生合作讲义</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>练习</td>
+        <td>
+          <ul>
+              <li>NYU DL Lab Session: <a href="https://github.com/jakezhaojb/20190507NYU">GCN图卷积网络</a></li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="rl-tabular">增强学习原理</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>Value-based methods</li>
+            <li>Policy gradient：REINFORCE，Actor–Critic</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>课本</td>
+        <td>
+          <ul>
+            <li>增强学习，Ch.1 Intro</li>
+            <li>增强学习，Ch.2 MAB</li>
+            <li>增强学习，Ch.3 MDP</li>
+            <li>增强学习，Ch.4 动态规划（Policy/Value Iteration）</li>
+            <li>增强学习，Ch.5 蒙特卡洛方法</li>
+            <li>增强学习，Ch.6 TD学习</li>
+            <li>增强学习，Ch.7 n-step自举</li>
+            <li>增强学习，Ch.8 计划和学习方法</li>
+            <li>增强学习，Ch.9 on-policy近似预测</li>
+            <li>增强学习，Ch.10 on-policy近似控制</li>
+            <li>增强学习，Ch.13 Policy gradient</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>材料</td>
+        <td>
+          <ul>
+            <li><a href="https://simoninithomas.github.io/Deep_reinforcement_learning_Course/">概念入门</a></li>
+            <li>CS182 Lec 20 PG</li>
+            <li>CS182 Lec 21 value</li>
+            <li>CS182 Note 9，10</li>
+            <li>Toronto CSC421 Lec 20 pg, 21 q-Learning</li>
+            <li>论文：<a href="https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf">DQN paper (Nature"</a>)</li>
+            <li>论文：<a href="https://arxiv.org/pdf/1602.01783.pdf">Asynchronous Methods for Deep RL "</a></li>
+            <li>论文：<a href="https://arxiv.org/abs/1509.06461">Double DQN"</a></li>
+            <li>MIT 6.S191 Lec 5</li>
+            <li><a href="https://spinningup.openai.com/">OpenAI Spinning Up</a></li>
+            <li>Adventure：<a href="https://github.com/higgsfield/RL-Adventure">DQN</a>，<a href="https://github.com/higgsfield/RL-Adventure-2">PG</a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>练习</td>
+        <td>
+          <ul>
+            <li>Toronto CSC421 Tutorial 10 RL</li>
+            <li>MIT 6.S191 Lab 3 Keras CartPole实验</li>
+            <li>CS181 Assign 4，实现PG Agent，完成CartPole增强学习实验</li>
+            <li>CS181 Assign 3，实现DQN Agent，完成Pong增强学习实验</li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="rl-appro">RL应用</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>AlphaGo</li>
+            <li>推荐</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>课本</td>
+        <td>
+          <ul>
+            <li>增强学习，Ch.14 心理学</li>
+            <li>增强学习，Ch.16 神经科学</li>
+            <li>增强学习，Ch.16 App: AlphaGo，个性化服务</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>材料</td>
+        <td>
+          <ul>
+            <li>CS182 Lec 24 Game</li>
+            <li>Toronto CSC421 Lec 22 go</li>
+            <li>论文：<a href="https://www.nature.com/articles/nature24270.epdf">Mastering the Game of Go without Human Knowledge"</a></li>
+            <li>Youtube视频：<a href="https://www.youtube.com/watch?v=Wujy7OzvdJk">Mastering games without Human Knowledge</a>，2018-Jan，David Silver</li>
+            <li>论文：<a href="http://mcts.ai/pubs/mcts-survey-master.pdf">A Survey of Monte-Carlo Tree Search Methods"</a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>练习</td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="rl">RL前线</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>Imitation Learning</li>
+            <li>Exploration</li>
+            <li>Learning to Learn</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>课本</td>
+        <td>
+          <ul>
+            <li>增强学习，Ch.17 Frontiers</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>材料</td>
+        <td>
+          <ul>
+            <li>CS182 Lec 19 Imi，22 explore，23 meta</li>
+            <li>CS182 Note 9，10</li>
+            <li>论文：<a href="https://arxiv.org/abs/1604.07316">End-to-End Learning for Self-Driving Cars"</a></li>
+            <li>论文：<a href="https://arxiv.org/abs/1011.0686">DAGGER"</a></li>
+            <li>论文：<a href="https://arxiv.org/abs/1707.02201">Adversarial Imitation Learning"</a></li>
+            <li>论文：<a href="https://arxiv.org/abs/1606.01868">Count-Based Exploration and Intrinsic Motivation"</a></li>
+            <li>论文：<a href="https://arxiv.org/abs/1705.05363">Curiosity-driven Exploration"</a></li>
+            <li>论文：<a href="https://arxiv.org/pdf/1901.10902.pdf">Infobot: Information Bottleneck for RL"</a></li>
+            <li>网页：<a href="http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/">Learning to Learn blog post "</a></li>
+            <li>论文：<a href="https://arxiv.org/abs/1606.04080">Matching Networks for One-Shot Learning"</a></li>
+            <li>论文：<a href="https://arxiv.org/abs/1703.03400">Model-Agnostic Meta-Learning"</a></li>
+            <li>Youtube视频：<a href="https://www.youtube.com/watch?v=TyOooJC_bLY">Deep Learning for Robotics</a>，2017-Dec，Pieter Abbeel</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>练习</td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="test">概念自测</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>CS181 MidTerm 练习 </li>
+            <li>Toronto CSC421 练习和测试</li>
+            <li><a href="https://pair.withgoogle.com/">Google AI实际系统设计注意事项</a></li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <a href="../index.html">返回主页</a>
+
+    </body>
+</html>
