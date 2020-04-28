@@ -1,0 +1,28 @@
+body {
+    background-color: #00ffff;
+    text-align: center;
+}
+
+h1 {
+    color: #22ab5f;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    background-color: #22ab5f;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+.answer {
+    display: none;
+}
+
+#denied {
+    color: red;
+}
+
+#yes {
+    color: green;
+}
