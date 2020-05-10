@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>网站设计与实现（入门）</title>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+              text-align: left;
+            }
+            /* tr:nth-child(odd){
+                background-color: #cff;
+                color: white;
+            } */
+            .neirong {
+                background-color:yellow;
+            }
+            #zuiqiang{
+                background-color:red;
+            }
+        </style>
+    </head>
+
+    <body>
+
+      <h1>网站设计入门</h1>
+
+      <h2> <a name="index">目录</a></h2>
+      <ul>
+        <li>第一阶段</li>
+        <ul>
+          <li> <a href="#html"> HTML</a></li>
+          <li> <a href="#css"> CSS </a></li>
+          <li> <a href="#case1"> 项目1 </a></li>
+          <li> <a href="#mobile">移动Web</a></li>
+        </ul>
+        <li>第二阶段</li>
+        <ul>
+        <li> <a href="#js"> JavaScript </a></li>
+        <li> <a href="#dom"> DOM API</a></li>
+        <li> <a href="#jquery">JQuery </a></li>
+        <li> <a href="#case2"> 项目2 </a></li>
+        </ul>
+        <li>第三阶段</li>
+        <ul>
+          <li> <a href="#react">React</a></li>
+          <li> <a href="#case3"> 项目3 </a></li>
+        </ul>
+      </ul>
+
+      <h2> <a name="html"> HTML </a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>材料</td>
+        <td><ul>
+          <li>明扬推荐Web前端教程：01 HTML5</li>
+          <ul>
+            <li>工具</li>
+            <li>HTML基本结构</li>
+            <li>标签、路径</li>
+            <li>列表、表格</li>
+            <li>表单</li>
+            <li>HTML5</li>
+            <li>代码练习</li>
+          </ul>
+          <li>林大PDF</li>
+          <ul>
+            <li> 1-1 Web前端开发概述</li>
+            <li> 1-2 网站与网页</li>
+            <li> 1-3 Web前端开发技术</li>
+            <li> 扩展(动画)：浏览器如何渲染网页？服务器的作用？</li>
+      			<li> 2-1 HTML概述 </li>
+            <li> 2-2 HTML文件结构 </li>
+            <li> 2-3 HTML标签(I)  h1~h6、p、br、pre、span、hr </li>
+            <li> 2-4 HTML标签(II)   a </li>
+            <li> 2-5 HTML标签(III)  img </li>
+            <li> 2-6 HTML标签(IV) div、ul、ol	、table </li>
+            <li> 2-7 HTML标签(V) form、input、select、textarea </li>
+            <li> 2-8 Web语义化 em strong dl dt dp </li>
+          </ul>
+          <li>学堂PDF</li>
+          <ul>
+            <li>网络</li>
+            <li>HTML/CSS</li>
+            <li>应用无障碍</li>
+          </ul>
+          <li>HTML5</li>
+          <ul>
+            <li> 林大PDF 7-5 HTML5 </li>
+            <li>学堂PDF</li>
+          </ul>
+        </ul></td>
+      </tr>
+      <tr>
+      <td>FCC</td>
+      <td>
+        <ul>
+          <li> 教程: <a href="https://learn.freecodecamp.one/responsive-web-design/basic-html-and-html5">HTML基础介绍</a>
+            ，测验
+            <!-- ：<a href="https://exam.kaoshixing.com/login/exam/exam_skip_login/396781/178451">FCC - HTML</a> ，-->（10分）
+          </li>
+          <li> 教程: <a href="https://learn.freecodecamp.one/responsive-web-design/applied-accessibility">应用无障碍介绍</a>
+            ，测验
+            <!-- <a href="https://exam.kaoshixing.com/login/exam/exam_skip_login/396817/178451">FCC - HTML5</a> -->（15分）
+          </li>
+        </ul>
+      </td>
+      </tr>
+      <tr>
+        <td>W3school</td>
+        <td>
+          <ul>
+            <li><a href="https://www.w3school.com.cn/h.asp">HTML教程</a>，<a href="https://www.w3school.com.cn/quiz/quiz.asp?quiz=html">测验</a></li>
+            <li><a href="https://www.w3school.com.cn/html5/index.asp">HTML5教程</a>，<a href="https://www.w3school.com.cn/quiz/quiz.asp?quiz=html5">测验</a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>面试</td>
+        <td><ul>
+          <li><a href="https://ks.wjx.top/jq/52946859.aspx"> 笔试</a> （24分）</li>
+        </ul> </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="css"> CSS </a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>材料</td>
+        <td><ul>
+          <li>明扬推荐Web前端教程：02 CSS3</li>
+          <ul>
+            <li>字体</li>
+            <li>选择器、样式</li>
+            <li>背景</li>
+            <li>盒模型</li>
+            <li>浮动</li>
+            <li>Photoshop</li>
+            <li>定位</li>
+            <li>Flex、响应式</li>
+            <li>练习</li>
+          </ul>
+          <li>林大PDF</li>
+          <ul>
+    				<li> 3-1 CSS概述 </li>
+    				<li> 3-2 CSS添加方法 </li>
+    				<li> 3-3 CSS选择器 </li>
+    				<li> 3-4 CSS样式(I) 文字样式 </li>
+    				<li> 3-5 CSS样式(II) 背景、超链接样式 </li>
+    				<li> 3-6 CSS样式(III) 列表 表格样式 </li>
+    				<li> 4-1 布局与定位概述 </li>
+    				<li> 4-2 盒子模型（I） </li>
+    				<li> 4-3 盒子模型（II） </li>
+    				<li> 4-4 CSS定位机制概述 </li>
+    				<li> 4-5 文档流定位 </li>
+    				<li> 4-6 浮动定位 </li>
+    				<li> 4-7 层定位 </li>
+    				<li> 5-1 圆角边框与阴影 </li>
+    				<li> 5-2 文字与文本 </li>
+    				<li> 5-3 2D变换 </li>
+    				<li> 5-4 过渡与动画 </li>
+    				<li> 5-5 3D变换 </li>
+          </ul>
+          <li>学堂PDF</li>
+          <ul>
+            <li>CSS优先级</li>
+            <li>背景图像</li>
+          </ul>
+        </ul></td>
+      </tr>
+      <tr>
+      <td>FCC - CSS基础</td>
+      <td>
+        <ul>
+          <li>FCC: <a href="https://learn.freecodecamp.one/responsive-web-design/basic-css">CSS基础介绍</a>，测验
+            <!-- ：<a href="https://exam.kaoshixing.com/login/exam/exam_skip_login/396794/178451">FCC - CSS基础</a>， -->
+            （10分）</li>
+          <li>FCC: <a href="https://learn.freecodecamp.one/responsive-web-design/applied-visual-design">应用视觉设计</a>，测验
+            <!-- ：<a href="https://exam.kaoshixing.com/login/exam/exam_skip_login/396804/178451">FCC - 应用视觉设计</a> -->
+            （15分）</li>
+        </ul>
+      </td>
+      </tr>
+      <td>FCC - CSS中级</td>
+      <td>
+        <ul>
+          <li>FCC: <a href="https://learn.freecodecamp.one/responsive-web-design/css-grid">CSS 网格介绍</a></li>
+          <li>FCC: <a href="https://learn.freecodecamp.one/responsive-web-design/css-flexbox">CSS弹性盒子介绍</a></li>
+        </ul>
+      </td>
+      </tr>
+      <tr>
+        <td>W3school</td>
+        <td>
+          <ul>
+            <li><a href="https://www.w3school.com.cn/css/index.asp">CSS教程</a>，<a href="https://www.w3school.com.cn/css3/index.asp">CSS3教程</a>，<a href="https://www.w3school.com.cn/quiz/quiz.asp?quiz=css">测验</a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>笔试</td>
+        <td>
+          <ul>
+            <li><a href="https://ks.wjx.top/jq/52957211.aspx"> 测验</a> （38分）</li>
+          </ul>
+        </td>
+      </tr>
+
+    </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="case1"> 项目1 </a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>材料</td>
+        <td>
+          <ul>
+            <li>明扬推荐Web前端教程</li>
+            <ul>
+              <li>03-1 电商项目</li>
+              <li>03-2 前端基本功</li>
+            </ul>
+            <li>林大Web入门</li>
+            <ul>
+              <li>Oppo网站</li>
+            </ul>
+            <li>趣味网站分析：<a href="https://huangela.github.io/index.html">网站</a>，<a href="https://github.com/huangela/huangela.github.io">代码</a></li>
+            <li>伯克利Decal网站作品分析：<a href="http://webdesigndecal.github.io/showcase/">网站</a></li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="mobile">移动Web</a></h2>
+      <table style="width:100%">
+        <tr>
+          <td>材料</td>
+          <td>
+            <ul>
+              <li>明扬推荐Web前端教程</li>
+              <ul>
+                <li>12 移动Web开发</li>
+                <li>14 响应式开发</li>
+                <ul>
+                  <li>媒体查询</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </ul>
+              <li>林大PDF</li>
+              <ul>
+                <li> 7-4 响应式布局（扩展） </li>
+              </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>FCC</td>
+          <td>
+            <ul>
+              <li>FCC: <a
+                  href="https://learn.freecodecamp.one/responsive-web-design/responsive-web-design-principles">响应式Web设计介绍</a>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>项目</td>
+          <td>
+            <ul>
+              <li>明扬推荐Web前端教程</li>
+              <ul>
+                <li>13 移动Web电商项目</li>
+                <li>15 金融响应式开发项目</li>
+              </ul>
+            </ul>
+          </td>
+        </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="js"> JavaScript编程 </a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>材料</td>
+        <td><ul>
+          <li>明扬推荐Web前端教程：04 JS基础</li>
+          <ul>
+            <li>变量，数据类型，操作符</li>
+            <li>流程控制</li>
+            <li>数组</li>
+            <li>函数</li>
+            <li>对象</li>
+            <li>字符串</li>
+          </ul>
+          <li>明扬推荐Web前端教程：06 JS高级</li>
+          <ul>
+            <li>继承</li>
+            <li>闭包</li>
+            <li>递归</li>
+            <li>正则表达式</li>
+            <li>排序</li>
+          </ul>
+          <li>明扬推荐Web前端教程：17 ES6语法</li>
+          <ul>
+            <li>变量</li>
+            <li>字符串和函数</li>
+          </ul>
+          <li>林大PDF</li>
+          <ul>
+    				<li> 6-1 概述与基础语法 </li>
+    				<li> 6-2 变量 </li>
+    				<li> 6-3 数据类型 </li>
+    				<li> 6-4 运算符与表达式 </li>
+    				<li> 6-5 函数 </li>
+    				<li> 6-6 分支结构 </li>
+    				<li> 6-7 循环结构 </li>
+    				<li> 6-8 数组 </li>
+    				<li> 6-9 数组API函数 </li>
+          </ul>
+          <li>学堂PDF</li>
+          <ul>
+              <li>历史、Debug</li>
+              <li>变量、数据类型</li>
+              <li>布尔值，If-else，loop</li>
+              <li>数组、字符串、正则表达式</li>
+              <li>函数、对象、原型、继承</li>
+              <li>本地存储、JSON</li>
+              <li>ES6</li>
+              <li>练习</li>
+          </ul>
+        </ul></td>
+      </tr>
+      <tr>
+        <td>笔记</td>
+        <td>
+          <ul>
+            <li>基础</li>
+            <li>数组</li>
+            <li>函数</li>
+            <li>对象</li>
+            <li>ES6</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+      <td>FCC</td>
+      <td>
+        <ul>
+            <li> FCC：<a href="https://learn.freecodecamp.one/javascript-algorithms-and-data-structures/basic-javascript">Javascript基础</a>，
+            <a href="https://learn.freecodecamp.one/javascript-algorithms-and-data-structures/debugging">实战调试</a>，测验
+            <!-- ：<a href="https://exam.kaoshixing.com/login/exam/exam_skip_login/396836/178451">FCC - JS基础 </a>， -->
+            （40分） </li>
+            <li> FCC：<a href="https://learn.freecodecamp.one/javascript-algorithms-and-data-structures/basic-data-structures">数据结构基础</a>，测验
+              <!-- ：<a href="https://exam.kaoshixing.com/login/exam/exam_skip_login/397532/178451">FCC - JS数据结构和函数 </a>， -->
+              （35分）</li>
+            <!-- <li>FCC：<a href="https://learn.freecodecamp.one/javascript-algorithms-and-data-structures/object-oriented-programming">面向对象编程</a> </li> -->
+            <li>FCC：<a href="https://learn.freecodecamp.one/javascript-algorithms-and-data-structures/es6">ES6</a>，测验
+              <!-- ：<a href="https://exam.kaoshixing.com/login/exam/exam_skip_login/397626/178451">FCC - ES6</a>， -->
+              （20分）</li>
+            <li> FCC：<a
+                href="https://learn.freecodecamp.one/javascript-algorithms-and-data-structures/regular-expressions">正则表达式</a>，测验
+              <!-- ：<a href="https://exam.kaoshixing.com/login/exam/exam_skip_login/398247/178451">FCC - 正则表达式</a>， -->
+              （35分）
+            </li>
+            <li>FCC：<a
+                href="https://learn.freecodecamp.one/javascript-algorithms-and-data-structures/functional-programming">函数式编程</a>
+            </li>
+            </ul>
+      </td>
+      </tr>
+      <tr>
+        <td>W3school</td>
+        <td>
+          <ul>
+            <li><a href="https://www.w3school.com.cn/js/index.asp">Javascript教程</a>，<a
+                href="https://www.w3school.com.cn/quiz/quiz.asp?quiz=js">测验</a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>项目实战</td>
+        <td>
+          <ul>
+            <li> FCC：<a
+                href="https://learn.freecodecamp.one/javascript-algorithms-and-data-structures/basic-algorithm-scripting">算法基础</a>
+            </li>
+            <li>FCC：<a
+                href="https://learn.freecodecamp.one/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting">算法中级</a>
+            </li>
+            <li>FCC：<a
+                href="https://learn.freecodecamp.one/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects">项目实战</a>
+            </li>
+            <ul>
+              <li>回文检查器</li>
+              <li>罗马数字转换器</li>
+              <li>凯撒密码</li>
+              <li>电话号码验证器</li>
+              <li>收银机</li>
+            </ul>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>分析</td>
+        <td>
+          <ol>
+            <li><a href="http://pythontutor.com/javascript.html#mode=edit">Javascript Tutor</a>：可视化计算机是如何一步步运行你的代码的</li>
+            <li><a href="http://pythontutor.com/javascript.html#code=var%20add1%20%3D%20function%20%28x%29%20%7B%0A%20%20console.log%28'a'%29%3B%0A%20%20return%20x%20%2B%201%3B%0A%20%20%7D%3B%0A%0Afunction%20square%28x,y%29%20%7B%0A%20%20return%20x%28y%29%20*%20x%28y%29%3B%0A%20%20%7D%3B%0A%0Avar%20sx%20%3D%20square%28add1,3%29%3B%0A%0A&curInstr=11&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D">函数嵌套运行过程解析</a></li>
+            <li><a href="http://pythontutor.com/javascript.html#code=var%20anArr%20%3D%20%5B1,2,3%5D%3B%0AnewArr%20%3D%20anArr.map%28function%20%28val,%20ind%29%20%7B%0A%20%20%20%20%20%20%20return%20val*ind%3B%0A%20%20%20%20%7D%29%3B&curInstr=8&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D">Map工作过程解析</a></li>
+            <li><a href="http://pythontutor.com/javascript.html#code=var%20globalVar%20%3D%201%3B%0Afunction%20localFunc%28argVar%29%20%7B%0A%20%20var%20localVar%20%3D%200%3B%0A%20%20function%20embedFunc%28%29%20%7B%0A%20%20%20%20return%20%2B%2BlocalVar%20%2B%20argVar%20%2B%20globalVar%3B%0A%20%20%20%20%7D%0A%20%20return%20embedFunc%3B%0A%7D%0Avar%20myFunc%20%3D%20localFunc%2810%29%3B%0A%0Aconsole.log%28myFunc%28%29%29%0A%0Aconsole.log%28myFunc%28%29%29&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D">Closures工作过程解析</a></li>
+            <li><a href="http://pythontutor.com/javascript.html#code=var%20myObj%20%3D%20%28function%28%29%20%7B%0A%20%20%20var%20privateProp1%20%3D%201%3B%20%20var%20privateProp2%20%3D%20%22test%22%3B%0A%20%20%20var%20setPrivate1%20%3D%20function%28val1%29%20%20%7B%20privateProp1%20%3D%20val1%3B%20%7D%0A%20%20%20var%20compute%20%3D%20function%28%29%20%7Breturn%20privateProp1%20%2B%20privateProp2%3B%7D%0A%20%20%20return%20%7Bcompute%3A%20compute,%20setPrivate1%3A%20setPrivate1%7D%3B%0A%7D%29%28%29%3B%0A%0AmyObj.setPrivate1%283%29%0A%0Aconsole.log%28myObj.compute%28%29%29%0A&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D">Closures私有属性工作过程解析</a></li>
+          </ol>
+        </td>
+      </tr>
+
+      <tr>
+          <td>参考材料</td>
+          <td>
+              <ul>
+                  <li>《JavaScript权威指南-第6版》第1-5章《基础》，第6章《对象》，第7章《数组》，第8章《函数》，10章《正则表达式》
+                  <li>《Javascript语音精粹》第1-3章 《基础》，第4章《函数》，第6章《数组》，7，8章《正则表达式》</li>
+                  <li> 洋葱数学，高中数学，人教版，必修一，集合</li>
+                  <li><a href="http://www.runoob.com/w3cnote/es6-tutorial.html">ES6教程</a></li>
+              </ul>
+           </td>
+      </tr>
+      </table>
+
+      <h2> <a name="dom"> DOM JavaScript编程 </a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>材料</td>
+        <td><ul>
+          <li>明扬推荐Web前端教程：05 WebAPI</li>
+          <ul>
+            <li>获取元素</li>
+            <li>事件、样式</li>
+            <li>节点</li>
+            <li>案例</li>
+          </ul>
+          <li>林大PDF</li>
+          <ul>
+      				<li> 6-10 DOM查找 </li>
+      				<li> 6-11 DOM修改 </li>
+      				<li> 6-12 DOM添加 </li>
+      				<li> 6-13 BOM </li>
+          </ul>
+          <li>学堂PDF</li>
+          <ul>
+              <li>DOM选择</li>
+              <li>CSS修改、内容修改</li>
+              <li>Event、表单</li>
+          </ul>
+        </ul></td>
+      </tr>
+      <tr>
+        <td>笔记</td>
+        <td>
+          <ul>
+            <li>DOM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+      <tr>
+        <td>W3school</td>
+        <td>
+          <ul>
+            <li><a href="https://www.w3school.com.cn/htmldom/index.asp">DOM教程</a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+      <tr>
+        <td>笔试</td>
+        <td>
+          <ul>
+            <li><a href="https://ks.wjx.top/jq/53241453.aspx">测验</a>（106分）</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+      <h2> <a name="jquery"> JQuery</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>材料</td>
+        <td><ul>
+          <li>明扬推荐Web前端教程：07 JQuery</li>
+          <ul>
+            <li>选择器</li>
+            <li>样式</li>
+            <li>动画</li>
+            <li>元素创建</li>
+            <li>事件</li>
+            <li>插件</li>
+          </ul>
+          <li>林大PDF</li>
+          <ul>
+    				<li> 7-1 JQuery概述，工厂函数 </li>
+    				<li> 7-2 JQuery增删改查 </li>
+    				<li> 7-3 JQuery事件 </li>
+          </ul>
+          <li>学堂PDF</li>
+        </ul></td>
+      </tr>
+      <td>FCC</td>
+      <td>
+        <ul>
+            <li> FCC：<a href=" https://learn.freecodecamp.one/front-end-libraries/jquery"> jQuery </a></li>
+        </ul>
+      </td>
+    </tr>
+      <tr>
+        <td>W3school</td>
+        <td>
+          <ul>
+            <li><a href="https://www.w3school.com.cn/jquery/index.asp">JQuery教程</a>，<a
+                href="https://www.w3school.com.cn/quiz/quiz.asp?quiz=jquery">测验</a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+          <td>参考材料</td>
+          <td>
+              <ul>
+                  <li> <a href="https://jquery.com/">jquery官方网站</a></li>
+                  <!-- <li> <a href="https://getbootstrap.com">bootstrap官方网站</a></li> -->
+                  <li> 《JavaScript权威指南-第6版》第13-17,19章</li>
+              </ul>
+           </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="case2"> 项目2 </a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li>林大第8章</li>
+            <ul>
+      				<li> 8-1 网页布局与初始化（整个案例源代码在这里下载） </li>
+      				<li> 8-2 网页顶部、导航栏 </li>
+      				<li> 8-3 网页产品内容、搜索功能 </li>
+      				<li> 8-4 页面服务、售后服务 </li>
+      				<li> 8-5 网页底部、页面插件引用 </li>
+      				<li> 8-6 返回顶部、吸顶灯功能 </li>
+            </ul>
+            <li>WDD</a> </li>
+            <ul>
+              <li>登录界面</li>
+              <li>小汽车</li>
+            </ul>
+            <li>明扬推荐Web前端教程</li>
+            <ul>
+              <li>10 H5购物网站项目</li>
+              <li>11 H5 API和项目</li>
+            </ul>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Lab</td>
+        <td>
+          <ul>
+          <li>ZIP</li>
+          <ul>
+              <li>1-linda</li>
+            </ul>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>HW</td>
+        <td>
+          <ul>
+            <li>实务学堂网站设计</li>
+            <li>女工网站</li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="react">React</a></h2>
+      <table style="width:100%">
+        <tr>
+          <td>材料</td>
+          <td>
+            <ul>
+              <li>实务PDF</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>内容</td>
+          <td>
+            <ul>
+              <li>引言、组件概念</li>
+              <li>开发入门</li>
+              <li>模块定义（函数，类）</li>
+              <li>属性、状态</li>
+              <li>组件生命周期</li>
+              <li>事件响应</li>
+              <li>多模块交互</li>
+              <li>SAAS</li>
+              <li>应用创建</li>
+              <li>测试</li>
+            </ul>
+          </td>
+        </tr>
+        <td>Lab</td>
+        <td>
+          <ul>
+            <li>Zip</li>
+          </ul>
+        </td>
+        </tr>
+        <tr>
+          <td>笔记</td>
+          <td>
+            <ul>
+              <li> SASS </li>
+              <li> React </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>React</td>
+          <td>
+            <ul>
+              <li> FCC：<a href="https://learn.freecodecamp.one/front-end-libraries/react"> React </a>，测试
+                <!-- ： <a href="https://exam.kaoshixing.com/exam/enter_exam/178451/398545">FCC - React</a>， -->
+                （20分）</li>
+            </ul>
+          </td>
+        <tr>
+          <td>面试</td>
+          <td>
+            <ul>
+              <li><a href="https://ks.wjx.top/jq/53254449.aspx">测试</a>（46题）</li>
+            </ul>
+          </td>
+        </tr>
+        </tr>
+
+        <tr>
+          <td>FCC</td>
+          <td>
+            <ul>
+              <li> FCC：<a href="https://learn.freecodecamp.one/front-end-libraries/sass"> Sass </a></li>
+              <li> FCC：<a href="https://learn.freecodecamp.one/front-end-libraries/redux"> Redux </a></li>
+              <li> FCC：<a href="https://learn.freecodecamp.one/front-end-libraries/react-and-redux"> React和Redux </a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>实战</td>
+          <td>
+            <ul>
+              <li> 按钮1，按钮2</li>
+              <li> 计算器1，<a href="https://github.com/ahfarmer/calculator">计算器2</a></li>
+              <li> 番茄时钟</li>
+              <li> 电子鼓</li>
+              <li> Tic-Tac-Toe游戏</li>
+              <li> Markdown文件预览器</li>
+              <li><a href="https://github.com/jossmac/react-images">React图片插件</a></li>
+              <li><a href="https://reactfordesigners.com/framer/unsplash">React图片搜索和处理工具</a></li>
+          </td>
+        </tr>
+        <tr>
+          <td>参考材料</td>
+          <td>
+            <ul>
+              <li><a href="https://zh-hans.reactjs.org/">简介</a></li>
+              <li> 教程：<a href="https://zh-hans.reactjs.org/tutorial/tutorial.html">完成一个Tit-Tac-Toe</a></li>
+              <li><a href="https://zh-hans.reactjs.org/docs/hello-world.html">HelloWorld</a></li>
+              <li><a href="https://zh-hans.reactjs.org/docs/thinking-in-react.html">React设计哲学</a></li>
+              <li><a href="https://medium.freecodecamp.org/the-beginners-guide-to-react-9be65f50a55c">FCC React入门</a></li>
+              <li><a href="https://medium.freecodecamp.org/the-react-handbook-b71c27b0a795">FCC React手册</a></li>
+              <li><a href="https://material-ui.com"> Material UI设计</a></li>
+              <li><a
+                  href="https://medium.freecodecamp.org/the-vue-handbook-a-thorough-introduction-to-vue-js-1e86835d8446">FCC
+                  Vue手册</a></li>
+              <li><a href="https://github.com/ReactTraining/react-workshop">React Workshop</a></li>
+              <li><a href="https://github.com/ReactTraining/hooks-workshop">React Hooks Workshop</a></li>
+              <li><a href="https://www.framer.com/">交互式设计工具</a></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="case3"> 项目3 </a></h2>
+      <table style="width:100%">
+        <tr>
+          <td>内容</td>
+          <td>
+            <ul>
+              <li>Wdd</li>
+              <ul>
+                <li>Tweet</li>
+                <li>Todo List</li>
+                <li>购物车</li>
+                <li>API</li>
+                <li>定时器</li>
+                <li>Firebase</li>
+              </ul>
+              <li>明扬推荐Web前端教程：27 ReactNative电影项目</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+
+      <a href="#index">返回目录</a>
+
+      <h2> <a name="refer">参考文献</a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>图书</td>
+        <td>
+          <ul>
+              <li> JavaScript The Good Parts - 中文版 《Javascript语音精粹》</li>
+              <li> JavaScript The Definitive Guid - 中文版 《JavaScript权威指南-第6版》</li>
+              <li> Professional JavaScript for Web developers - 中文版 《Javascript高级程序设计（第3版）》</li>
+              <li> <a href="https://www.bookstack.cn/read/eloquent-js-3e-zh/README.md">JavaScript 编程精解 中文第三版</a>，中文社区翻译，<a href="https://github.com/apachecn/eloquent-js-3e-zh">Github仓库</a></li>
+              <li> <a href="https://github.com/apachecn/impatient-js-zh/issues/1">写给不耐烦程序员的 JavaScript</a>，中文社区翻译</li>
+              <li> You Don't Know JS: <a href="https://github.com/getify/You-Dont-Know-JS">Github</a>，<a href="https://github.com/getify/You-Dont-Know-JS/tree/1ed-zh-CN">中文版</a></li>
+              <li> JavaScript实例自学手册：通过486个例子掌握WEB开发捷径 </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>教程</td>
+        <td>
+          <ul>
+              <li> MDN：<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide">JS指南</a>  </li>
+              <li> MDN：<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript">重新介绍 Java​Script</a>  </li>
+              <li> <a href="https://javascript.info/">The Modern JavaScript Tutorial</a></li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <h2>说明</h2>
+
+      <h3> <a name="tutor">课代表</a></h3>
+
+      <p>职责：
+      <ul>
+        <li>主讲进度安排：主要是注意和课程网站同步，特别是网站各章作业、期末考试、讨论关闭的时间。需要在此之前，学堂这边也讲完，并留下足够时间让同学完成作业，提交作业，参加考试，参加讨论，这样最后才能拿到林大的证书</li>
+        <li>管理课堂纪律，记课堂纪律部分学分，收作业，发证书</li>
+      </ul>
+      </p>
+
+      <h3> <a name="tutor">主讲同学</a></h3>
+
+      <p>职责：
+      <ul>
+        <li>备课：提前完成各章内容，估计同学可能会遇到的难点，在视频开始前，或结束后，有针对性地讲解</li>
+        <li>演示：在大屏幕上演示自己是怎么工作的，并解释自己的工作逻辑</li>
+        <li>答疑：认真回答同学的问题。若立刻回答不了问题，先记下来，然后和导师组同学和老师讨论，寻找答案，然后在下一次课上分享</li>
+        <li>改作业，记学习总结和FCC作业两部分的学分</li>
+      </ul>
+      </p>
+
+      <h3> <a name="tutor">助教同学</a></h3>
+
+      <p>职责：
+      <ul>
+        <li>其它导师主讲时，自己便是助教。负责一桌，维护纪律，解答、记录同学提出的问题，并把答案和更多同学分享</li>
+        <li>答疑：认真回答同学的问题。若立刻回答不了问题，先记下来，然后和导师组同学和老师讨论，寻找答案，然后在下一次课上分享</li>
+        <li>带好自己的小组，完成两项课程设计，记课程设计部分学分</li>
+      </ul>
+      </p>
+
+      <h3> <a name="test">考核</a></h3>
+
+      <p>满分100分，其中包括</p>
+      <ol>
+        <li>证书（合格10分，优秀20分）：每周登录网站，复习视频，完成单元测验，作业，讨论，期末考试，期末拿到由北京林业大学颁发的证书。总分60～79为合格，80～100分为优秀。</li>
+        <li>学习小结（25分）：在作业本上，针对每小节视频的内容，完成50字-100字学习小结，周五晚上睡觉前交作业（泽钊收）。共50节，每节0.5分</li>
+        <li>课堂纪律（15分）：不缺席，不玩游戏，不睡觉，不拿手机。出现一次扣1分</li>
+        <li>FCC作业（20分）：10个单元，在作业本上，对每一关，记录其中的英文生词及其例句，并一句话总结该每关卡学到的内容。每单元2分</li>
+        <li>课程设计（20分）：2个，每个10分</li>
+      </ol>
+
+      <!-- <a href="../index.html">返回主页</a>
+
+      <h2> <a name="js"> 7、JavaScript </a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>材料</td>
+        <td><ul>
+          <li>林大PDF</li>
+          <ul>
+
+          </ul>
+          <li>学堂PDF</li>
+          <ul>
+
+          </ul>
+        </ul></td>
+      </tr>
+      <td>FCC</td>
+      <td>
+        <ul>
+
+        </ul>
+      </td>
+      <tr>
+      <tr>
+      <td>Lab</td>
+      <td>
+        <ul>
+          <li>ZIP</li>
+          <ul>
+          </ul>
+          <li>0-linda</li>
+
+        </ul>
+      </td>
+      </tr>
+      <tr>
+      <td>HW</td>
+      <td>
+        <ul>
+          <li>ZIP</li>
+          <ul>
+          </ul>
+
+          <li>0-linda</li>
+        </ul>
+      </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a> -->
+
+      <!-- <h2> <a name="">  </a></h2>
+      <table style="width:100%">
+      <tr>
+        <td>内容</td>
+        <td>
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+        </td>
+      </tr>
+      </tr>
+      <tr>
+        <td>作业</td>
+        <td>
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+
+      <a href="#index">返回目录</a> -->
+
+    </body>
+</html>
