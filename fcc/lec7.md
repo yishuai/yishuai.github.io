@@ -1,4 +1,3 @@
----
 class: middle, center
 # FCC分析
 ---
