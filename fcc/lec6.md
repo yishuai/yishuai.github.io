@@ -50,11 +50,20 @@ class: middle, center
 
 .center[.width-30[![](./figures/share/dkcoding.jpeg)]]
 ---
-# 教学方法
+# CS教学方法
 - 斯坦福大学 Chris Gregg
 - 课程：CS298/EDUC298：[如何教新手计算机科学](http://cs298.stanford.edu/)
 - 课本：《[Your First Year Teaching Computer Science​](https://web.stanford.edu/class/cs298/cgi-bin/course-reader/)》
 - 网站：[CS教学小技巧](http://CSTeachingTips.org)
+---
+# 课程设计与教师职业发展
+- 哈佛大学Bok教学中心：学生为中心的课程设计
+- [在线资源](https://bokcenter.harvard.edu/online-resources)
+---
+# 教育技术与应用学习科学
+- CMU：[LearnLab](http://www.learnlab.org/)
+- [METALS - 教育技术与应用学习科学硕士学位](https://www.hcii.cmu.edu/masters-educational-technology-and-applied-learning-science-program-overview)
+- 图书《e-Learning and the Science of Instruction》
 ---
 # [伯克利WDD](https://wdd.io/resources/)
 .center[.width-90[![](./figures/share/wdd.png)]]
