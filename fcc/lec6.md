@@ -82,6 +82,13 @@ class: middle, center
 - 200 道填空题，欢迎来电索取
 
 ## .center[.width-70[![](./figures/share/kaoshixin.png)]]
+
+---
+# 人工智能
+
+- [机器学习与人工智能导论](https://bjtu-netcomm.github.io/ai/ai.html)，北京交通大学，2020年
+- [人工智能：技术与社会](https://yishuai.github.io/dl)，北京交通大学，2020年
+- [深度学习自学指南](../doc/dl.html)，2019年
 ---
 # 资源分享
 
