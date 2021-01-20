@@ -33,19 +33,22 @@ class: middle, center
 - 欧阳老师：一切
 - 金玉老师：一切
 - 陈怡老师：英语
-- 李志老师：C语言，算法
-- 徐天晟老师：Linux，数据库
-- 熊治杰老师：Javascript编程
+- 李志老师：数学、C语言、算法
+- 徐天晟老师：Linux、数据库
+- 熊治杰老师：Web、Javascript
 
 ---
 # 站着巨人的肩膀上
 
+- FreeCodeCamp 前端教育公益组织（在线练习、社区、视频、直播）
 - 纽约 CodeNation 编程公益组织
 - 伯克利大学 WDD 大学生编程教学社团
 - 纽约大学 Joshua Clayton 教授
+- 麻省理工 Web
+- 斯坦福 Web
 
 ---
-# 回顾
+# 这一年
 
 - 2-6月：春季学期
   - 远程教学（Code Nation）
@@ -95,7 +98,7 @@ class: middle, center
 
 - 艾克
 
-<video width="660" height="520" controls>
+<video width="560" height="420" controls>
     <source src="./figures/3-6-cn/3.mp4" type="video/mp4">
 </video>
 ---
@@ -142,25 +145,6 @@ class: middle, center
 .center[.width-40[![](./figures/4-ali.jpg)]]
 
 ---
-# 五月：实习第一波
-
-- 罗明扬同学
-- 青岛海尔
-- Misshop 管理软件快速开发平台
-
-.center[.width-40[![](./figures/misshop.png)]]
-
-- 特别感谢潘迪老师
-
-???
-http://www.misshop.com.cn/
-
----
-class: middle, center
-
-# 眼看OKR要完成了！
-
----
 # 同学作品：五月
 
 - 王台归同学
@@ -195,12 +179,30 @@ class: middle, center
 .center[.width-100[![](./figures/3-6-cn/王台归.jpg)]]
 
 ---
+# 五月：第一位实习的同学
+
+- 罗明扬同学，2019年3月入学
+- 青岛海尔，Misshop 管理软件快速开发平台
+
+.center[.width-40[![](./figures/misshop.png)]]
+
+- 特别感谢潘迪老师！
+
+???
+http://www.misshop.com.cn/
+
+---
+class: middle, center
+
+# OKR完成？
+
+---
 # 第二阶段
 
 - 7-8月：小学期
   - 广州开学
   - 舒欣老师前端实战
-  - 伯克利大学网站设计和实现
+  - 伯克利大学网站设计和实现（WDD）
   - 英语
 
 ---
@@ -227,14 +229,9 @@ class: middle, center
 ---
 # 伯克利大学网站设计和实现
 
+- 设计之美
+
 .center[.width-100[![](./figures/8-wdd/wdd-example.png)]]
-
----
-# 八月：
-
-- 编程英语
-
-.center[.width-110[![](./figures/8-背单词.jpeg)]]
 
 ---
 # 同学作品：葛雨城
@@ -265,10 +262,18 @@ class: middle, center
 </video>
 
 ---
+# 陈怡老师：编程英语
+
+.center[.width-110[![](./figures/8-背单词.jpeg)]]
+
+---
+class: middle, center
+
 # 小学期结课
 
-- 同学反馈
-  - “一个月学得比一学期还多”
+## 同学反馈
+
+### “一个月学得比一学期还多”
 
 ---
 # 9月：企业见习
@@ -276,7 +281,9 @@ class: middle, center
 - 艾克，台归
 - 北京润乾
 - 谢谢潘迪老师！
-- 开放日
+- 同学反馈
+  - “我现在最想的就是学习！”
+- 开放日同学分享
   - “这一年印象最深的是什么？”
   - “见习”
 
@@ -290,10 +297,10 @@ class: middle, center
   - 李志老师 NOIP 信息学奥赛
   - 徐天晟老师 Linux + 数据库
   - 熊治杰老师 Javascript
-  - 罗明杨老师 Vue前端框架 + 数据库
   - 欧阳老师前端开发
   - 金玉老师职业素养
-  - FreeCodeCamp在线练习
+  - 罗明杨老师 Vue前端框架 + 数据库
+
 ---
 # 9月 新教室
 
@@ -372,15 +379,6 @@ https://www.bilibili.com/video/BV1X5411V7vK/
 .center[.width-100[![](./figures/12-ouyang/12-欧阳show编程.png)]]
 
 ---
-# 同学作品
-
-- 陈艺文
-
-.center[.width-50[![](./figures/draw/svg.png)]]
-
-https://cyw20031123.github.io/qiMoKaoShi/cn8/Happy%20New%20Year.html
-
----
 # Canvas 教学系统
 
 .center[.width-60[![](./figures/12-canvas.png)]]
@@ -389,6 +387,15 @@ https://cyw20031123.github.io/qiMoKaoShi/cn8/Happy%20New%20Year.html
 # 练习和上课时间表
 
 .center[.width-100[![](./figures/12-canvas-schedule.png)]]
+
+---
+# 同学作品
+
+- 陈艺文
+
+.center[.width-50[![](./figures/draw/svg.png)]]
+
+https://cyw20031123.github.io/qiMoKaoShi/cn8/Happy%20New%20Year.html
 
 ---
 # 总结和展望
