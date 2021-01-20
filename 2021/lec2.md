@@ -36,7 +36,6 @@ class: middle, center
 - 李志老师：C语言，算法
 - 徐天晟老师：Linux，数据库
 - 熊治杰老师：Javascript编程
-- 王欢老师：Javascript数据科学
 
 ---
 # 站着巨人的肩膀上
@@ -406,6 +405,14 @@ https://cyw20031123.github.io/qiMoKaoShi/cn8/Happy%20New%20Year.html
 ???
 
 12-plan.md
+
+---
+# 感谢
+
+- 田发伟老师
+- 魏林老师
+- 郭超洪老师
+- 王欢老师
 
 ---
 # 彩蛋
