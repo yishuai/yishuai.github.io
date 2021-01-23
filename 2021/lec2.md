@@ -765,7 +765,6 @@ Confluence
 - 2019，职业教育
 - .red[2020，素质 + 职业教育]
 
-
 ---
 class: middle, center
 # 2020: 素质 + 职业教育
@@ -792,7 +791,7 @@ class: middle, center
   - “老师今天只有一个作业么？”
 - 听到这些话，第一反应就是：成了
 
-???
+---
 # 同学作品：三月
 
 - 艾克
@@ -809,7 +808,7 @@ class: middle, center
 .center[.width-50[![](./figures/2020/3-6-cn/luojiaxiang.png)]]
 .center[[点击体验](https://mcqueen5258.github.io/whackLuo/)]
 
-???
+---
 # 同学作品：四月
 
 - 崔永祥同学
@@ -818,6 +817,7 @@ class: middle, center
 
 .center[[点击体验](https://hcnjyfv.github.io/ex24/)]
 
+---
 # 同学作品：四月
 
 - 葛雨城同学
@@ -825,6 +825,7 @@ class: middle, center
 .center[.width-90[![](./figures/2020/3-6-cn/geyucheng.png)]]
 .center[[点击体验（Popcode）](https://popcode.org/?snapshot=b7d3f215-19fc-4130-af7f-d3f0b6c08dad)]
 
+---
 # 同学作品：五月
 
 - 王台归同学
@@ -832,11 +833,13 @@ class: middle, center
 .center[.width-60[![](./figures/2020/3-6-cn/wangtaigui.png)]]
 <!-- .center[[点击体验](https://wtg378900.github.io/-4/)] -->
 
+---
 # 同学作品：雷涵
 
 .center[.width-90[![](./figures/2020/3-6-cn/leihan.png)]]
 .center[[点击体验](https://leizhonghan.github.io/operation/)]
 
+???
 # 英语
 
 - [Quizlet](https://quizlet.com/class/13272136/) 谷歌“单词卡”工具
@@ -983,14 +986,14 @@ class: middle, center
 
 .center[.width-100[![](./figures/2020/8-wdd/光明.png)]]
 
-???
-
+---
 # 同学作品：艾克
 
 <video width="660" height="520" controls>
     <source src="./figures/2020/8-wdd/艾克.mp4" type="video/mp4">
 </video>
 
+---
 # 同学作品：雷涵
 
 <video width="660" height="520" controls>
@@ -1168,11 +1171,11 @@ https://cyw20031123.github.io/qiMoKaoShi/cn8/Happy%20New%20Year.html
 ???
 # 艾克作品
 
+- 互动莲花
+  - 请把鼠标移到莲花上
+  - 请用鼠标点击莲花
+
 https://mcqueen5258.github.io/examination/Lotus/
-
-NYU绘画我们的材料
-
-- https://yishuai.github.io/draw/index.html
 
 ---
 # 12月新的职业机会
@@ -1343,8 +1346,6 @@ https://handbook.fas.harvard.edu/book/computer-science
 - ”今天晚餐，基金会有个项目总监，可能喝酒喝得也有点多，很动情，跑来跟我说：
   - 不要怀疑自己的价值，不要有压力，不要在意成功不成功，改变一百个孩子是成功，带出一个孩子也是成功。你们在做的事，是一件非常新的事，在全国，找不到十个人可以做。所以要坚信自己的价值。
 - 和最近也比较焦急的一帅老师分享这席话。“
-
----
 # 汇报
 
 - 把在这个过程中学到的用到大学课堂上
@@ -1368,11 +1369,9 @@ https://handbook.fas.harvard.edu/book/computer-science
   - 基于知识的数学练习信息抽取与图谱构建
   - 基于人工智能的学习材料聚类和推荐系统
   - 面向目标的智能课程发现和推荐系统
-  - 基于游戏的云服务课堂应答系统设计
 
 ???
 
----
 # 科研
 
 - 人工智能造福社会
@@ -1392,16 +1391,16 @@ https://handbook.fas.harvard.edu/book/computer-science
 - 王欢老师
 - 极客学院（李桐老师）
 - 学堂在线
+- 阿里云大学
 - 捐助电脑和设备的好心人
 - Miya（刘于瑜）
-- New York
 
 ---
 # 彩蛋
 
 - 《太阳能坚持到什么时候》
   - 好友谈书、荐书播客：喜马拉雅，[微信公众号](https://mp.weixin.qq.com/s/HEpz-Y8mNxn9qXG67V8UHw)
-  - ”谢谢一帅老师。人文教育需要从长计议，在青少年人们贫瘠的沙地缓缓的滴水，栽种，细水长流。最近计划着先做个公众号并一个音频播客推荐青少年读的书，先试一试。这几天计划出第一期，到时还请一帅老师来品鉴。”
+  - ”谢谢一帅老师。人文教育需要从长计议，在青少年人们贫瘠的沙地缓缓的滴水，栽种，细水长流。最近计划着先做个公众号并一个音频播客推荐青少年读的书。”
 
 .center[.width-90[![](./figures/2020/1-zhangxin.png)]]
 
@@ -1412,9 +1411,7 @@ https://handbook.fas.harvard.edu/book/computer-science
 
 .center[.width-110[![](./figures/2020/junyan.png)]]
 
-
 ---
-
 class: middle, center
 
 # 编程是我们与世界交流的一种方式
