@@ -1,11 +1,14 @@
 class: middle, center
-## 2018-2021
-# 实务编程的学习和发现之旅
-<br>
-## 陈一帅
-####  实务学堂
+
+# 爱、一起、学习
+
+### 2018-2021：我们的编程学习和发现之旅
+
+#### 实务学堂
+##### 陈一帅
 
 2021年年会
+ <br>
 
 ???
 
@@ -1012,17 +1015,13 @@ class: middle, center
 ---
 class: middle, center
 
-# 小学期结课
+## 小学期结课
 
-## 同学反馈
+### 同学反馈
 
-### “一个月学到的比一学期还多”
+# “一个月学到的比一学期还多”
 
----
-
-# WDD 我们的材料
-
-- https://yishuai.github.io/wdd/index.html
+我们的WDD材料：https://yishuai.github.io/wdd/index.html
 
 ---
 # 9月：另两位同学企业见习
