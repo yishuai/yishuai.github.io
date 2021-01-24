@@ -502,36 +502,36 @@ class: middle, center
 
 .center[.width-110[![](./figures/2019/fcc.jpeg)]]
 
-???
-# 2019年秋季
+---
+# 小插曲
 
-- 新生的引导
+- 2019年秋季入学新生的引导
   - 新生情况复杂
-  - 发现了 谷歌 Blockly 编程兴趣入门
-  - 练习的其实是逻辑
-- 原计划 3个月
-  - “Blockly 就要三个月，明年怎么可能职业？”
-  - 压缩到一个月
+  - 发现了谷歌的 Blockly 编程兴趣入门
+  - 练习程序员的思维逻辑
+- 一个月的工作坊
+  - 课程材料：https://yishuai.github.io/blockly/index.html
+---
 
 # 谷歌 Blockly
 
 - 老少皆宜
 
-.center[.width-110[![](./figures/2019/blockly.png)]]
+.center[.width-90[![](./figures/2019/blockly.png)]]
 
+---
 # 谷歌 Blockly
 
-- 神童张鑫老师也很投入
+- 张鑫老师也很投入
 
-.center[.width-110[![](./figures/2019/blockly2.png)]]
+.center[.width-90[![](./figures/2019/blockly2.png)]]
 
-https://yishuai.github.io/blockly/index.html
-
+---
 # 谷歌 Blockly
 
 - 欧阳老师做出来时的惊喜
 
-.center[.width-110[![](./figures/2019/blockly-ouy.png)]]
+.center[.width-80[![](./figures/2019/blockly-ouy.png)]]
 
 ---
 # 罗明杨的成功给我们一种错觉
