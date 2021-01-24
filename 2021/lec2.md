@@ -942,7 +942,7 @@ class: middle, center
 
 .center[.width-100[![](./figures/2020/7-andy/apple.png)]]
 
-???
+---
 # 舒欣老师前端实战
 
 .center[.width-90[![](./figures/2020/7-andy/11-andy2.jpeg)]]
@@ -1163,9 +1163,25 @@ https://www.bilibili.com/video/BV1X5411V7vK/
 ---
 # 艺文作品
 
-.center[.width-60[![](./figures/2020/12-svg.png)]]
+- SVG 动画
 
-https://cyw20031123.github.io/qiMoKaoShi/cn8/Happy%20New%20Year.html
+.center[.width-40[![](./figures/2020/12-svg.png)]]
+
+.center[[点击体验](https://cyw20031123.github.io/qiMoKaoShi/cn8/Happy%20New%20Year.html)]
+
+.center[.smallest[(打开网站后，请点击“新春快乐”文字体验动画效果)]]
+
+---
+# 艺文作品
+
+<!-- - 新年红包 -->
+
+.center[.width-30[![](./figures/2020/12-hongbao.png)]]
+
+.center[[.smallest[点击体验]](https://cyw20031123.github.io/qiMoKaoShi/cn10/Red%20envelope.html)]
+
+.center[.smallest[(打开网站后，按提示点击互动)]]
+
 
 ???
 # 艾克作品
@@ -1399,7 +1415,7 @@ https://handbook.fas.harvard.edu/book/computer-science
 
 - 《太阳能坚持到什么时候》
   - 好友谈书、荐书播客：喜马拉雅，[微信公众号](https://mp.weixin.qq.com/s/HEpz-Y8mNxn9qXG67V8UHw)
-  - ”谢谢一帅老师。人文教育需要从长计议，在青少年人们贫瘠的沙地缓缓的滴水，栽种，细水长流。最近计划着先做个公众号并一个音频播客推荐青少年读的书。”
+  - ”谢谢一帅老师。人文教育需要从长计议，在青少年人们贫瘠的沙地缓缓滴水，栽种，细水长流。最近计划着先做个公众号并一个音频播客推荐青少年读的书。”
 
 .center[.width-90[![](./figures/2020/1-zhangxin.png)]]
 
