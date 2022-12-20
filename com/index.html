@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>通信系统原理</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>通信系统原理：信道编码</h1>
+
+    <p>
+      北京交通大学《通信系统原理：信道编码》课程，讲解信道编码、线性分组码、循环码、卷积码的基本原理。详细课程信息请访问：https://yishuai.github.io/com
+    </p>
+
+    <p>视频合集：<a href="https://space.bilibili.com/88039759/channel/collectiondetail?sid=949280">B站链接</a></p>
+
+    <h3>目录</h3>
+    <ol>
+      <li><a href="#basic">基础知识</a></li>
+      <li><a href="#block">线性分组码</a></li>
+      <li><a href="#cyc">循环码</a></li>
+      <li><a href="#conv">卷积码</a></li>
+      <li><a href="#refer">参考资料</a></li>
+    </ol>
+
+    <!-- == -->
+
+    <h2><a name="basic">一、基础知识</a></h2>
+
+    <h3>1：信道编码基本概念</h3>
+    <p>信道编码的目的、类型、在通信系统中的位置、什么是纠错和检错。</p>
+    <p><a href="https://www.bilibili.com/video/BV1nA411X7Pn/">B站视频</a></p>
+
+    <h3>2：信道编码定理与编码性能</h3>
+    <p>香农信道编码定理、编码效率、编码增益</p>
+    <p><a href="https://www.bilibili.com/video/BV16V4y1c7p9/">B站视频</a></p>
+
+    <h3>3：最小码距与检纠错性能</h3>
+    <p>汉明重量、汉明距、最小码距、检纠错能力</p>
+    <p><a href="https://www.bilibili.com/video/BV16e4y1L7Wc/">B站视频</a></p>
+
+    <h2><a name="block">二、线性分组码</a></h2>
+
+    <h3>4：分组码基本概念</h3>
+    <p>分组码、信息位、校验位、校验子、(7,4)汉明码的校验子、校验矩阵（H 矩阵）、Q 矩阵生成校验位、H 矩阵的系统形式、H 矩阵的行变换还是有效校验矩阵</p>
+    <p><a href="https://www.bilibili.com/video/BV16d4y1Y72W/">B站视频</a></p>
+
+    <h3>5：分组码的生成矩阵</h3>
+    <p>G 矩阵，系统形式的 G 矩阵中的 Q 矩阵与系统形式的 H 矩阵中的 P 矩阵的转置关系，G 矩阵的行变换还是有效生成矩阵，G 矩阵的封闭型</p>
+    <p><a href="https://www.bilibili.com/video/BV19g411t7gc/">B站视频</a></p>
+
+    <h3>6：H 矩阵与G 矩阵的线性空间理解</h3>
+    <p>H 矩阵和 G 矩阵组成的两个线性子空间，互为零空间，对偶关系，对偶码</p>
+    <p><a href="https://www.bilibili.com/video/BV1CV4y1c7ft/">B站视频</a></p>
+
+    <h3>7：译码的硬判决与软判决</h3>
+    <p>硬判决实现简单，软判决性能更好</p>
+    <p><a href="https://www.bilibili.com/video/BV1FW4y1M7Dq/">B站视频</a></p>
+
+    <h3>8：最小汉明距离译码</h3>
+    <p>硬判决，最大似然译码等价于最小汉明距离译码。利用码字的封闭性，最小码重即最小码距</p>
+    <p><a href="https://www.bilibili.com/video/BV1Ae4y1T7Lc/">B站视频</a></p>
+
+    <h3>9：基于校验子的译码纠错</h3>
+    <p>根据校验子，推断错误模式，实现纠错</p>
+    <p><a href="https://www.bilibili.com/video/BV1g8411W7K4/">B站视频</a></p>
+
+    <h3>10：汉明界与汉明码</h3>
+    <p>汉明码的码长 n 与校验位数目 r 的约束关系，汉明码能纠 1 位错</p>
+    <p><a href="https://www.bilibili.com/video/BV14d4y1e7Gg/">B站视频</a></p>
+
+    <h2><a name="cyc">三、循环码</a></h2>
+
+    <h3>11：循环码及其码多项式</h3>
+    <p>循环码、码多项式、循环左移的码多项式表示</p>
+    <p><a href="https://www.bilibili.com/video/BV1124y1U7a7/">B站视频</a></p>
+
+    <h3>12：循环码的生成多项式</h3>
+    <p>r 次生成多项式、作为因式的生成多项式、循环码的循环性质的证明</p>
+    <p><a href="https://www.bilibili.com/video/BV1C84y147tK">B站视频</a></p>
+
+    <h3>13：循环码的编码与译码</h3>
+    <p>循环码的生成矩阵、基于多项式整除的系统码编码方式、系统形式生成矩阵、编码电路、基于多项式整除的译码</p>
+    <p><a href="https://www.bilibili.com/video/BV1CV4y1c7nw/">B站视频</a></p>
+
+    <h2><a name="conv">四、卷积码</a></h2>
+
+    <h3>14：卷积码的生成器结构</h3>
+    <p>约束长度、编码器结构、生成器序列、八进制表示、多项式表示</p>
+    <p><a href="https://www.bilibili.com/video/BV1DP4y1B75W/">B站视频</a></p>
+
+    <h3>15：卷积码的卷积生成</h3>
+    <p>多项式卷积，半无限生成矩阵</p>
+    <p><a href="https://www.bilibili.com/video/BV1B44y1d7RS/">B站视频</a></p>
+
+    <h3>16：卷积码的状态转移</h3>
+    <p>状态转移图、网格图、合法路径</p>
+    <p><a href="https://www.bilibili.com/video/BV1d44y1Z7Xe/">B站视频</a></p>
+
+    <h3>17：序列译码的维特比算法</h3>
+    <p>序列译码、最大似然译码、维特比算法（加比选）</p>
+    <p><a href="https://www.bilibili.com/video/BV1DW4y1T7NY/">B站视频</a></p>
+
+    <h2><a name="refer">五、参考资料</a></h2>
+
+    同学考研练习分享，2020年，<a href="https://space.bilibili.com/88039759/favlist?fid=1127483959&ftype=create">B站视频 </a>
+
+  </body>
+
+  </html>
